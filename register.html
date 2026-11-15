@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELNQ | Create Account</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #14243a;
+}
+header {
+  background: #102542;
+  color: white;
+  padding: 24px 8%;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+main {
+  max-width: 950px;
+  margin: 55px auto;
+  padding: 20px;
+}
+h1 { text-align: center; }
+.intro {
+  text-align: center;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px #10254212;
+}
+.card h2 { color: #102542; }
+.card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+input, select {
+  padding: 13px;
+  border: 1px solid #d7dfeb;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 15px;
+}
+button {
+  padding: 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #087f8c;
+  color: white;
+  font-weight: bold;
+  cursor: not-allowed;
+  opacity: .7;
+}
+.note {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #102542;
+  color: white;
+}
+@media(max-width:700px) {
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>VELNQ</header>
+
+<main>
+  <h1>Join the Velnq Network</h1>
+  <p class="intro">
+    Choose your account type to get started
+    with smarter procurement.
+  </p>
+
+  <div class="cards">
+
+    <section class="card">
+      <h2>Buyer Registration</h2>
+      <p>Create an account to find suppliers,
+      request quotations and manage purchases.</p>
+
+      <form>
+        <input type="text" placeholder="Business name" required>
+        <input type="text" placeholder="Contact person" required>
+        <input type="email" placeholder="Business email" required>
+        <input type="tel" placeholder="Phone number">
+        <input type="text" placeholder="Business address">
+        <input type="password" placeholder="Create password" required>
+        <button type="button" disabled>Registration coming soon</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Supplier Registration</h2>
+      <p>Join our supplier network to connect
+      with buyers and receive quotation requests.</p>
+
+      <form>
+        <input type="text" placeholder="Company name" required>
+        <input type="text" placeholder="Contact person" required>
+        <input type="email" placeholder="Business email" required>
+        <input type="tel" placeholder="Phone number">
+        <input type="text" placeholder="Products or services">
+        <input type="password" placeholder="Create password" required>
+        <button type="button" disabled>Registration coming soon</button>
+      </form>
+    </section>
+
+  </div>
+  <p class="note">
+    Registration forms are currently a design preview.
+    Account creation will be enabled after secure database
+    and authentication setup.
+  </p>
+</main>
+
+<footer>© 2026 VELNQ. All Rights Reserved.</footer>
+
+</body>
+</html>
